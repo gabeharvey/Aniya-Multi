@@ -128,6 +128,7 @@ const AthleteProgression = () => {
       bgColor="#4B4B4B"
       borderRadius="md"
       borderColor="#98FF98"
+      borderWidth="4px"
       maxW="1200px"
       mx="auto"
     >

@@ -34,7 +34,7 @@ function Academics() {
         h="auto"
         m="5"
         bgColor="#FF1493"
-        borderRadius="12px"
+        borderRadius="16px"
         borderWidth="4px"
         borderColor="#98FF98"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
