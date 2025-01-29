@@ -25,7 +25,7 @@ function Academics() {
       bgPosition="center"
       bgRepeat="no-repeat"
     >
-      <Heading fontSize="4xl" fontWeight="medium" color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" mb="5">
+      <Heading fontSize="4xl" fontWeight="medium" color="#FF1493" fontFamily="'Anton', serif" mb="5">
         Academics
       </Heading>
 
@@ -33,10 +33,10 @@ function Academics() {
         w={{ base: '80%', md: '300px' }} 
         h="auto"
         m="5"
-        bgColor="#7DF9FF"
+        bgColor="#FF1493"
         borderRadius="12px"
         borderWidth="4px"
-        borderColor="#FF4500"
+        borderColor="#98FF98"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={0} 
         display="flex"
@@ -64,7 +64,7 @@ function Academics() {
           bgColor="#F8F8FF"
           borderRadius="12px"
           borderWidth="4px"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
           p={4}
           display="flex"
@@ -74,7 +74,7 @@ function Academics() {
           transition={{ duration: 2, ease: 'easeOut' }}
         >
           <Link
-            fontFamily="'Lobster Two', sans-serif"
+            fontFamily="'Anton', serif"
             fontWeight="bold"
             href="/path-to-transcripts"
             isExternal
@@ -99,7 +99,7 @@ function Academics() {
           bgColor="#F8F8FF"
           borderRadius="12px"
           borderWidth="4px"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
           p={4}
           display="flex"
@@ -112,7 +112,7 @@ function Academics() {
           <Text fontWeight="bold" fontSize="lg" color="#000000" mb="2" textAlign="center">
             Academic Achievements
           </Text>
-          <VStack spacing={2} align="start" fontFamily="'Raleway', sans-serif" fontWeight="bold">
+          <VStack spacing={2} align="start" fontFamily="'Lora', serif" fontWeight="bold">
             {academicAchievements.map((achievement, index) => (
               <Text key={index} color="#000000">
                 - {achievement}

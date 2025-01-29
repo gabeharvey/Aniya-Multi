@@ -26,7 +26,7 @@ function Offers() {
       bgRepeat="no-repeat"
       mt={12}
     >
-      <Heading fontSize="4xl" fontWeight="medium" color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" mb="5" textAlign="center">
+      <Heading fontSize="4xl" fontWeight="medium" color="#FF1493" fontFamily="'Anton', serif" mb="5" textAlign="center">
         Scholarship Offers
       </Heading>
       <Flex
@@ -45,7 +45,7 @@ function Offers() {
           bgSize="1px 1px"
           borderRadius="12px"
           borderWidth="5px"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
           p={4}
           display="flex"
@@ -55,7 +55,7 @@ function Offers() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2, ease: 'easeOut' }}
         >
-          <Text color="#000000" fontWeight="bold" fontFamily="'Raleway', sans-serif" fontSize="lg">
+          <Text color="#000000" fontWeight="bold" fontFamily="'Lora', serif" fontSize="lg">
             No Scholarship Offers
           </Text>
         </MotionBox>
@@ -72,7 +72,7 @@ function Offers() {
             bgSize="1px 1px"
             borderRadius="12px"
             borderWidth="5px"
-            borderColor="#FF4500"
+            borderColor="#98FF98"
             boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
             p={4}
             display="flex"
@@ -90,10 +90,10 @@ function Offers() {
               mr={4}
             />
             <Box>
-              <Text color="#000000" fontWeight="bold" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+              <Text color="#000000" fontWeight="bold" fontFamily="'Anton', serif" fontSize="lg">
                 {offer.schoolName}
               </Text>
-              <Text color="#000000" fontFamily="'Raleway', sans-serif" fontSize="md" fontWeight="semibold" mt={1}>
+              <Text color="#000000" fontFamily="'Lora', serif" fontSize="md" fontWeight="semibold" mt={1}>
                 {offer.description}
               </Text>
             </Box>

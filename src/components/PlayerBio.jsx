@@ -15,7 +15,7 @@ function PlayerProfile() {
   };
 
   const player = {
-    frontImg: "ai-basketball-placeholder.png",
+    frontImg: "aniya-1.png",
     secondImg: "ai-basketball-placeholder.png",
     name: "Player Bio", 
     bioCategories: [
@@ -34,7 +34,7 @@ function PlayerProfile() {
       p={6}
       mt={12} 
     >
-      <Heading fontSize="4xl" fontWeight="medium" color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" mb="5">
+      <Heading fontSize="4xl" fontWeight="medium" color="#FF1493" fontFamily="'Anton', serif" mb="5">
         {player.name}
       </Heading>
 
@@ -62,7 +62,7 @@ function PlayerProfile() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#7DF9FF"
+      stroke="#FF1493"
       strokeWidth="2"
       width="40px"
       height="40px"
@@ -88,7 +88,7 @@ function PlayerProfile() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#7DF9FF"
+      stroke="#FF1493"
       strokeWidth="2"
       width="40px"
       height="40px"
@@ -105,7 +105,7 @@ function PlayerProfile() {
           bgSize="cover"
           bgPosition="center"
           borderRadius="12px"
-          borderColor="#7DF9FF"
+          borderColor="#FF1493"
           borderWidth="3px"
           minH="500px"
           minW="350px"
@@ -121,17 +121,17 @@ function PlayerProfile() {
           bgSize="1px 1px"
           borderRadius="12px"
           borderWidth="5px"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
           p={6}
         >
           <Grid gap={4}>
             {player.bioCategories.map((category, index) => (
               <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
-                <Text color="#000000" fontWeight="bold" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+                <Text color="#000000" fontWeight="bold" fontFamily="'Anton', serif" fontSize="lg">
                   {category.title}
                 </Text>
-                <Text color="#000000" fontFamily="'Raleway', sans-serif" fontSize="lg" fontWeight="semibold" mt={1}>
+                <Text color="#000000" fontFamily="'Lora', serif" fontSize="lg" fontWeight="semibold" mt={1}>
                   {category.description}
                 </Text>
               </Box>

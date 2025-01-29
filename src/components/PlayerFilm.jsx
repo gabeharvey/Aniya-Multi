@@ -9,7 +9,7 @@ function VideoCard({ videoSrc, title, description }) {
         h="100%"
         borderRadius="12px"
         borderWidth="4px"
-        borderColor="#FF4500"
+        borderColor="#98FF98"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         overflow="hidden"
         bgColor="#505050"
@@ -31,10 +31,10 @@ function VideoCard({ videoSrc, title, description }) {
           />
         </Box>
         <Box p={3} textAlign="center" bgColor="#F8F8FF" h="30%">
-          <Text fontSize="2xl" fontWeight="semibold" color="#000000" fontFamily="'Lobster Two', sans-serif">
+          <Text fontSize="2xl" fontWeight="semibold" color="#000000" fontFamily="'Anton', serif">
             {title}
           </Text>
-          <Text mt={2} fontSize="lg" fontWeight="bold" color="#000000" fontFamily="'Roboto+Condensed', sans-serif">
+          <Text mt={2} fontSize="lg" fontWeight="bold" color="#000000" fontFamily="'Lora', serif">
             {description}
           </Text>
         </Box>
@@ -102,7 +102,7 @@ function PlayerFilm() {
       mt={{ base: 12, md: 16 }}
       mb={{ base: 12, md: 16 }}
     >
-      <Text fontSize="4xl" fontWeight="medium" color="#7DF9FF" fontFamily="'Lobster Two', sans-serif">
+      <Text fontSize="4xl" fontWeight="medium" color="#FF1493" fontFamily="'Anton', serif">
         Player Film
       </Text>
       <SimpleGrid columns={columns} spacing={{ base: 3, sm: 5 }} justifyItems="center">

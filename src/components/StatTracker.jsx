@@ -86,7 +86,7 @@ function StatTracker() {
       bgRepeat="no-repeat"
       mt={16}
     >
-      <Heading fontSize="4xl" fontWeight="medium" color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" textAlign="center">
+      <Heading fontSize="4xl" fontWeight="medium" color="#FF1493" fontFamily="'Anton', serif" textAlign="center">
         Stat Tracker
       </Heading>
       <Flex gap={4} mb={6} justifyContent="center">
@@ -96,23 +96,23 @@ function StatTracker() {
           borderRadius="12px"
           p={4}
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           borderWidth="4px"
         >
           <Text 
-            color="#7DF9FF" 
+            color="#FF1493" 
             fontWeight="bold" 
-            fontFamily="'Raleway', sans-serif" 
+            fontFamily="'Lora', serif" 
             fontSize="md"
             textAlign="center" 
           >
             Incarnate Word Stats
           </Text>
-          <Text color="#7DF9FF">Points: {averagesHS.points}</Text>
-          <Text color="#7DF9FF">Rebounds: {averagesHS.rebounds}</Text>
-          <Text color="#7DF9FF">Assists: {averagesHS.assists}</Text>
-          <Text color="#7DF9FF">Steals: {averagesHS.steals}</Text>
-          <Text color="#7DF9FF">Blocks: {averagesHS.blocks}</Text>
+          <Text color="#FF1493">Points: {averagesHS.points}</Text>
+          <Text color="#FF1493">Rebounds: {averagesHS.rebounds}</Text>
+          <Text color="#FF1493">Assists: {averagesHS.assists}</Text>
+          <Text color="#FF1493">Steals: {averagesHS.steals}</Text>
+          <Text color="#FF1493">Blocks: {averagesHS.blocks}</Text>
         </MotionBox>
 
         <MotionBox
@@ -121,30 +121,30 @@ function StatTracker() {
           borderRadius="12px"
           p={4}
           boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
-          borderColor="#FF4500"
+          borderColor="#98FF98"
           borderWidth="4px"
         >
           <Text 
-            color="#7DF9FF" 
+            color="#FF1493" 
             fontWeight="bold" 
-            fontFamily="'Raleway', sans-serif"  
+            fontFamily="'Lora', serif"  
             fontSize="md"
             textAlign="center" 
           >
             Elite Club Stats
           </Text>
-          <Text color="#7DF9FF">Points: {averagesTexasHardwork.points}</Text>
-          <Text color="#7DF9FF">Rebounds: {averagesTexasHardwork.rebounds}</Text>
-          <Text color="#7DF9FF">Assists: {averagesTexasHardwork.assists}</Text>
-          <Text color="#7DF9FF">Steals: {averagesTexasHardwork.steals}</Text>
-          <Text color="#7DF9FF">Blocks: {averagesTexasHardwork.blocks}</Text>
+          <Text color="#FF1493">Points: {averagesTexasHardwork.points}</Text>
+          <Text color="#FF1493">Rebounds: {averagesTexasHardwork.rebounds}</Text>
+          <Text color="#FF1493">Assists: {averagesTexasHardwork.assists}</Text>
+          <Text color="#FF1493">Steals: {averagesTexasHardwork.steals}</Text>
+          <Text color="#FF1493">Blocks: {averagesTexasHardwork.blocks}</Text>
         </MotionBox>
       </Flex>
       <MotionBox
         w={{ base: '90%', md: '600px' }}
         bgColor="#F8F8FF"
         borderRadius="12px"
-        borderColor="#FF4500"
+        borderColor="#98FF98"
         borderWidth="5px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
@@ -152,7 +152,7 @@ function StatTracker() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 5, ease: 'easeOut' }}
       >
-        <Heading fontSize="lg" color="#000000" fontFamily="'Lobster Two', sans-serif" mb={4}>
+        <Heading fontSize="lg" color="#000000" fontFamily="'Anton', serif" mb={4}>
           Player Stats:
         </Heading>
         {games.length === 0 ? (
@@ -160,8 +160,8 @@ function StatTracker() {
         ) : (
           <Grid gap={4}>
             {games.map((game, index) => (
-              <Box key={index} p={3} bgColor="transparent" borderRadius="8px" borderColor="#FF4500">
-                <Text color="#000000" fontWeight="bold" fontFamily="'Lobster Two', sans-serif">
+              <Box key={index} p={3} bgColor="transparent" borderRadius="8px" borderColor="#98FF98">
+                <Text color="#000000" fontWeight="bold" fontFamily="'Anton', serif">
                   Game {index + 1} - Valentina Cantu:
                 </Text>
                 <Text color="#000000">Team: {game.team}</Text>
@@ -184,7 +184,7 @@ function StatTracker() {
         bgImage="linear-gradient(-45deg, #38393d 25%, transparent 25%, transparent 50%, #38393d 50%, #38393d 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
         borderRadius="12px"
-        borderColor="#FF4500"
+        borderColor="#98FF98"
         borderWidth="4px"
         boxShadow="0 0 15px rgba(0, 0, 0, 0.7)"
         p={6}
@@ -194,13 +194,13 @@ function StatTracker() {
       >
         <VStack spacing={4} align="stretch">
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Team
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={gameInfo.team}
               name="team"
               onChange={handleGameInfoChange}
@@ -208,13 +208,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Opponent
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={gameInfo.opponent}
               name="opponent"
               onChange={handleGameInfoChange}
@@ -222,13 +222,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Date
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={gameInfo.date}
               name="date"
               onChange={handleGameInfoChange}
@@ -236,13 +236,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Points
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={stats.points}
               name="points"
               onChange={handleInputChange}
@@ -250,13 +250,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Rebounds
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={stats.rebounds}
               name="rebounds"
               onChange={handleInputChange}
@@ -264,13 +264,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Assists
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={stats.assists}
               name="assists"
               onChange={handleInputChange}
@@ -278,13 +278,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Steals
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={stats.steals}
               name="steals"
               onChange={handleInputChange}
@@ -292,13 +292,13 @@ function StatTracker() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF" fontFamily="'Lobster Two', sans-serif" fontSize="lg">
+            <FormLabel color="#FF1493" fontFamily="'Anton', serif" fontSize="lg">
               Blocks
             </FormLabel>
             <Input
               bgColor="#F8F8FF"
               color="#38393d"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={stats.blocks}
               name="blocks"
               onChange={handleInputChange}
@@ -308,18 +308,18 @@ function StatTracker() {
 
           <Button
             mt={4}
-            bgColor="#FF4500"
+            bgColor="#98FF98"
             color=" #000000"
             minW="100%"
             maxW="45%"
             alignSelf="center"
-            fontFamily="'Lobster Two', sans-serif"
+            fontFamily="'Anton', serif"
             fontWeight="medium"
             fontSize="xl"
             borderRadius="8px"
-            borderColor="#FF4500"
+            borderColor="#98FF98"
             borderWidth="3px"
-            _hover={{ borderColor: '#7DF9FF' }}
+            _hover={{ borderColor: '#FF1493' }}
             onClick={handleAddGame}
           >
             Add Game

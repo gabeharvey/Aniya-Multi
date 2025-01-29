@@ -56,12 +56,12 @@ const AthleteProgression = () => {
         {
           label: key.charAt(0).toUpperCase() + key.slice(1),
           data: progression.map((entry) => parseFloat(entry[key])),
-          borderColor: '#FF4500', 
+          borderColor: '#98FF98', 
           backgroundColor: 'rgba(255, 69, 0, 0.3)',
           borderWidth: 3, 
           pointRadius: 6, 
           pointBackgroundColor: '#FAF0E6', 
-          pointBorderColor: '#FF4500', 
+          pointBorderColor: '#98FF98', 
           pointBorderWidth: 2, 
           tension: 0.4, 
         },
@@ -79,7 +79,7 @@ const AthleteProgression = () => {
           color: '#FAF0E6', 
           font: {
             size: 14,
-            family: "'Lobster Two', sans-serif",
+            family: "'Anton', serif",
           },
         },
       },
@@ -89,7 +89,7 @@ const AthleteProgression = () => {
         color: '#FAF0E6',
         font: {
           size: 18,
-          family: "'Lobster Two', sans-serif",
+          family: "'Anton', serif",
         },
       },
     },
@@ -102,7 +102,7 @@ const AthleteProgression = () => {
           color: '#FAF0E6',
           font: {
             size: 12,
-            family: "'Lobster Two', sans-serif",
+            family: "'Anton', serif",
           },
         },
       },
@@ -114,7 +114,7 @@ const AthleteProgression = () => {
           color: '#FAF0E6',
           font: {
             size: 12,
-            family: "'Lobster Two', sans-serif",
+            family: "'Anton', serif",
           },
         },
       },
@@ -125,14 +125,15 @@ const AthleteProgression = () => {
     <Box
       p={{ base: 4, md: 8 }}
       w={{ base: '90%', md: '600px' }}
-      bgColor="#000000"
+      bgColor="#4B4B4B"
       borderRadius="md"
+      borderColor="#98FF98"
       maxW="1200px"
       mx="auto"
     >
       <Heading
-        color="#7DF9FF"
-        fontFamily="'Lobster Two', sans-serif"
+        color="#FF1493"
+        fontFamily="'Anton', serif"
         mb={4}
         align="center"
         fontSize="4xl"
@@ -141,7 +142,7 @@ const AthleteProgression = () => {
         Athlete Progression Tracker
       </Heading>
       <Box
-        border="4px solid #FF4500"
+        border="4px solid #98FF98"
         borderRadius="lg"
         p={6}
         bgColor="#38393D"
@@ -150,72 +151,72 @@ const AthleteProgression = () => {
       >
         <Grid gap={4} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}>
           <FormControl>
-            <FormLabel color="#7DF9FF">Vertical Jump (inches)</FormLabel>
+            <FormLabel color="#FF1493">Vertical Jump (inches)</FormLabel>
             <Input
               type="number"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.verticalJump}
               name="verticalJump"
               onChange={handleInputChange}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF">Speed (seconds for 40m)</FormLabel>
+            <FormLabel color="#FF1493">Speed (seconds for 40m)</FormLabel>
             <Input
               type="number"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.speed}
               name="speed"
               onChange={handleInputChange}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF">Shooting Accuracy (%)</FormLabel>
+            <FormLabel color="#FF1493">Shooting Accuracy (%)</FormLabel>
             <Input
               type="number"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.shootingAccuracy}
               name="shootingAccuracy"
               onChange={handleInputChange}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF">Endurance (minutes)</FormLabel>
+            <FormLabel color="#FF1493">Endurance (minutes)</FormLabel>
             <Input
               type="number"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.endurance}
               name="endurance"
               onChange={handleInputChange}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF">Agility (cone drill seconds)</FormLabel>
+            <FormLabel color="#FF1493">Agility (cone drill seconds)</FormLabel>
             <Input
               type="number"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.agility}
               name="agility"
               onChange={handleInputChange}
             />
           </FormControl>
           <FormControl>
-            <FormLabel color="#7DF9FF">Date</FormLabel>
+            <FormLabel color="#FF1493">Date</FormLabel>
             <Input
               type="date"
               bgColor="#FAF0E6"
               color="#38393D"
-              borderColor="#FF4500"
+              borderColor="#98FF98"
               value={measurables.date}
               name="date"
               onChange={handleInputChange}
@@ -224,18 +225,18 @@ const AthleteProgression = () => {
         </Grid>
         <Button
             mt={4}
-            bgColor="#FF4500"
+            bgColor="#98FF98"
             color=" #000000"
             minW="100%"
             maxW="45%"
             alignSelf="center"
-            fontFamily="'Lobster Two', sans-serif"
+            fontFamily="'Anton', serif"
             fontWeight="medium"
             fontSize="xl"
             borderRadius="8px"
-            borderColor="#FF4500"
+            borderColor="#98FF98"
             borderWidth="3px"
-            _hover={{ borderColor: '#7DF9FF' }}
+            _hover={{ borderColor: '#FF1493' }}
           onClick={handleAddProgression}
         >
           Add Progression
@@ -244,8 +245,8 @@ const AthleteProgression = () => {
       <Box mt={6}>
         <Heading
           size="lg"
-          color="#7DF9FF"
-          fontFamily="'Lobster Two', sans-serif"
+          color="#FF1493"
+          fontFamily="'Anton', serif"
           mb={4}
           align="center"
         >

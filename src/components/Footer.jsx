@@ -12,7 +12,7 @@ function Footer() {
             gap="1rem"
             mt="1"
           >
-            <div className="footer-logo">©2024 Valentina Cantu</div>
+            <div className="footer-logo">©2024 Aniya Marquez</div>
             <Flex alignItems="center" justifyContent="center">
               <div>
                 <a href="https://athletexelite.com" target="_blank" rel="noopener noreferrer" className="tilt-prism-footer">
